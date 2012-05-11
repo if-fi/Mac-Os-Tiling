@@ -37,14 +37,14 @@ try
 			
 			-- Special case if the number of windows is less than the number of columns preference
 			if windowCount is less than or equal to numCols then
-				set numRows to 1
+				set numRows to 2
 				set numCols to windowCount
 			end if
 			
 			-- Special case is there's only one window
 			if windowCount = 1 then
 				set numRows to 1
-				set numCols to 1
+				set numCols to 2
 			end if
 			
 			-- skipWindow is for skipping over windows which are invisible or titleless
@@ -84,7 +84,7 @@ try
 			
 			-- Special case if the number of windows is less than the number of columns preference
 			if windowCount is less than or equal to numCols then
-				set numRows to 3
+				set numRows to 1
 				set numCols to windowCount
 			end if
 			
