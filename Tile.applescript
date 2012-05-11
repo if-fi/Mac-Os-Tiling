@@ -3,11 +3,11 @@
 --found in comments here: http://www.macosxhints.com/article.php?story=20060105082728937
 
 property numCols : 2
---property screenWidth : 1920
---property screenHeight : 1080
+property screenWidth : 1920
+property screenHeight : 1080
 -- If you don't want to hard-code your screen width, because eg. you use multiple screens with differing properties at different times, then uncomment the 2 lines below:
-set screenWidth to word 3 of (do shell script "defaults read /Library/Preferences/com.apple.windowserver | grep -w Width") as number
-set screenHeight to word 3 of (do shell script "defaults read /Library/Preferences/com.apple.windowserver | grep -w Height") as number
+--set screenWidth to word 3 of (do shell script "defaults read /Library/Preferences/com.apple.windowserver | grep -w Width") as number
+--set screenHeight to word 3 of (do shell script "defaults read /Library/Preferences/com.apple.windowserver | grep -w Height") as number
 
 set menubarHeight to 22
 
